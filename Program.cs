@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using project.Models;
+using StackExchange.Redis.Extensions.Core.Configuration;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
