@@ -109,3 +109,11 @@ C:\Users\Ori\Desktop\WorkProj--1\project\obj\Debug\net7.0\refint\project.dll
 C:\Users\Ori\Desktop\WorkProj--1\project\obj\Debug\net7.0\project.pdb
 C:\Users\Ori\Desktop\WorkProj--1\project\obj\Debug\net7.0\project.genruntimeconfig.cache
 C:\Users\Ori\Desktop\WorkProj--1\project\obj\Debug\net7.0\ref\project.dll
+C:\Users\Ori\Desktop\WorkProj--1\project\bin\Debug\net7.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Users\Ori\Desktop\WorkProj--1\project\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Ori\Desktop\WorkProj--1\project\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Ori\Desktop\WorkProj--1\project\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\Ori\Desktop\WorkProj--1\project\bin\Debug\net7.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\Ori\Desktop\WorkProj--1\project\bin\Debug\net7.0\StackExchange.Redis.dll
+C:\Users\Ori\Desktop\WorkProj--1\project\bin\Debug\net7.0\StackExchange.Redis.Extensions.AspNetCore.dll
+C:\Users\Ori\Desktop\WorkProj--1\project\bin\Debug\net7.0\StackExchange.Redis.Extensions.Core.dll

@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/FootBuy/project.csproj": {}
+    "C:\\Users\\Ori\\Desktop\\WorkProj--1\\project\\project.csproj": {}
   },
   "projects": {
-    "/workspaces/FootBuy/project.csproj": {
+    "C:\\Users\\Ori\\Desktop\\WorkProj--1\\project\\project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/FootBuy/project.csproj",
+        "projectUniqueName": "C:\\Users\\Ori\\Desktop\\WorkProj--1\\project\\project.csproj",
         "projectName": "project",
-        "projectPath": "/workspaces/FootBuy/project.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/FootBuy/obj/",
+        "projectPath": "C:\\Users\\Ori\\Desktop\\WorkProj--1\\project\\project.csproj",
+        "packagesPath": "C:\\Users\\Ori\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ori\\Desktop\\WorkProj--1\\project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Ori\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/dotnet/7.0.306/sdk/7.0.306/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -109,7 +108,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.306/sdk/7.0.306/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
