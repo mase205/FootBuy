@@ -33,6 +33,7 @@ namespace project.Controllers {
     public ActionResult Privacy()
     {
         return View();
+        
     }
 
     public ActionResult Error()
