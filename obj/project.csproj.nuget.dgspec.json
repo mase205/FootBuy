@@ -72,9 +72,17 @@
               "target": "Package",
               "version": "[7.0.13, )"
             },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
             "Microsoft.OpenApi": {
               "target": "Package",
               "version": "[1.6.10, )"
+            },
+            "StackExchange.Redis.Extensions.AspNetCore": {
+              "target": "Package",
+              "version": "[9.1.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
