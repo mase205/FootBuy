@@ -1,0 +1,13 @@
+@using System;
+@model User;
+
+<div class="text-center">
+    @using (Html.BeginForm("Logout", "Auth", FormMethod.Post)) {
+        @Html.AntiForgeryToken()
+        <div class="LogOut">
+            <div class="form-group">
+                <button class="submit" type="submit" value="Logout">Log Out</button>
+            </div>
+        </div>
+    }
+</div>

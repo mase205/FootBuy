@@ -1,0 +1,31 @@
+@using System;
+@model Player;
+
+
+@if ( ViewBag.user != null) {
+    <div class="text-center">
+        <div class="wishlist-view">
+            <h1>@ViewBag.user.Username's Wishlist</h1>
+            <br/>
+            @foreach (Player player in ViewBag.WishlistPlayers) {
+                <div class="row">
+                    <h4><strong>@player.Name (@player.Age y/o)</strong> - Plays for @player.Club</h4>
+                </div>
+                <form method="post" asp-action="RemoveFromWishlist" asp-controller="Wishlist">
+                        <button type="submit" value="@player.PlayerID" name="PID">Remove player from Wishlist</button>
+                </form>
+                <br/><br/><br/>
+            }
+        </div>
+        <form asp-controller="Profile" asp-action="Index">
+            <button type="submit" >Go Back</button>
+        </form>
+    </div>
+}
+    else {
+        <div class="no-login">
+            <h1>You are not logged in. Please log in and try again</h1>
+        </div>
+    }
+    
+</div>

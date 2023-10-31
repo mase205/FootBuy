@@ -1,0 +1,33 @@
+@using System;
+@model User;
+
+@if ( ViewBag.user != null) {
+    <div class="text-center">
+        <div class="profile-view">
+            <h1>Hi, @ViewBag.user.Username!</h1>
+            @using (Html.BeginForm("ChangeFieldsLocked", "Profile", FormMethod.Post)) {
+                @Html.AntiForgeryToken()
+                <div class = 'ChangeFieldsUnlocked'>
+                    <div class="user-field">
+                        <label asp-for="Username"></label>
+                        <input asp-for="Username" name="username" value="@ViewBag.user.Username" />
+                    </div>
+                    <div class="user-field">
+                        <label asp-for="Email"></label>
+                        <input asp-for="Email" name="email" value="@ViewBag.user.Email" />
+                    </div>
+                    <div class="user-field">
+                        <label asp-for="Club"></label>
+                        <input asp-for="Club" name="club" value="@ViewBag.user.Club" />
+                    </div>
+                        <button id="change-profile-fields" type="submit" asp-controller="Profile" asp-action="ChangeFieldsLocked">Keep Changes</button>
+                </div>
+            }
+        </div>
+    </div>
+}
+else {
+    <div class="no-login">
+        <h1>You are not logged in. Please log in and try again</h1>
+    </div>
+}

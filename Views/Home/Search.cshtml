@@ -1,0 +1,52 @@
+@{
+    ViewBag.spaceDetection = ' ';
+}
+@using System;
+@using System.Text.RegularExpressions;
+@model Player;
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <h3>Search:</h3>
+    <div class="text-center">
+    @using (Html.BeginForm("Search", "Home", FormMethod.Post)) {
+        <div class="row">
+            <label>Name: </label>
+            <input name="name" type="text" />
+            <label>Club: </label>
+            <input name="club" type="text" />
+            <label>Country: </label>
+            <input name="country" type="text" />
+            <label>Price: </label>
+            <input name="pricemin" placeholder="Min." />
+            <input name="pricemax" placeholder="Max." />
+            <input type="submit" hidden/>
+        </div>
+    }
+    </div>
+    <div class="card-holder">
+        @foreach (Player player in ViewBag.PlayerList) {
+            string input = player.Country.Trim();
+            string param = @"\s+";
+            input = Regex.Replace(input, param, " ");
+            string[] parts = input.Split(ViewBag.spaceDetection);
+            <div class = "player-instance">
+                <h1>@player.Name</h1>
+                <div class="row">
+                    <h3>Club: @player.Club</h3>
+                    <h3>Country: @parts[0]</h3>
+                </div>
+                <h2>Price (EUR): @(player.Price*1000000)&euro;</h2>
+                <h2>Price (ILS): @(player.Price*1000000* await ViewBag.Rate)&#8362;</h2>
+                <div class="row">
+                    <form method="post" asp-action="AddToWishlist" asp-controller="Wishlist">
+                        <button type="submit" value="@player.PlayerID" name="PID">Add to Wishlist</button>
+                    </form>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+            </div>
+        }
+    </div>
+</div>

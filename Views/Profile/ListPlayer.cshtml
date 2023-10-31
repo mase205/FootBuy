@@ -1,0 +1,38 @@
+@{
+    var _player = ViewBag.player;
+    bool NewPlayer = (_player is null);
+}
+@using System;
+@model Player;
+
+<div class="text-center">
+    @using (Html.BeginForm("ListPlayerExtend", "Profile", FormMethod.Post, new{id="listing-def"})) {
+        @Html.AntiForgeryToken()
+            <div class="ListPlayer">
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <input name="name" class="form-control" value="@(NewPlayer ? string.Empty : _player.Name)"/>
+            </div>
+            <div class="form-group">
+                <label asp-for="Club"></label>
+                <input name="club" class="form-control" value="@ViewBag.Club" disabled/>
+            </div>
+            <div class="form-group">
+                <label asp-for="Country"></label>
+                <input name="country" class="form-control" value="@(NewPlayer ? string.Empty : _player.Country)"/>
+            </div>
+            <div class="form-group">
+                <label asp-for="Age"></label>
+                <input name="age" class="form-control" value="@(NewPlayer ? string.Empty : _player.Age)"/>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price"></label>
+                <input name="price" class="form-control" value="@(NewPlayer ? string.Empty : _player.Price*1000000)"/>
+            </div>
+            <div class="form-group">
+                <button class="submit" type="submit" value="ListPlayer">@(NewPlayer ? "Add Listing" : "Keep changes")</button>
+            </div>
+        </div>
+        
+    }
+</div>

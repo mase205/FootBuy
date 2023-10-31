@@ -1,0 +1,45 @@
+@using System;
+@model User;
+
+
+@if ( ViewBag.user != null) {
+    <div class="text-center">
+        <div class="profile-view">
+            <h1>Hi, @ViewBag.user.Username!</h1>
+            @using (Html.BeginForm("Index", "Profile", FormMethod.Post)) {
+                @Html.AntiForgeryToken()
+                    <div class = 'Index'>
+                        <div class="user-field">
+                            <label asp-for="Username"></label>
+                            <input asp-for="Username" name="username" value="@ViewBag.user.Username" disabled/>
+                        </div>
+                        <div class="user-field">
+                            <label asp-for="Email"></label>
+                            <input asp-for="Email" name="email" value="@ViewBag.user.Email" disabled/>
+                        </div>
+                        <div class="user-field">
+                            <label asp-for="Club"></label>
+                            <input asp-for="Club" name="club" value="@ViewBag.user.Club" disabled/>
+                        </div>
+                        <button type="submit" asp-controller="Profile" asp-action="ChangeFieldsUnlocked">Change Properties</button>
+                        <button id="logout" type="link" asp-controller="Profile" asp-action="Logout">Log out</button>
+                        <button asp-controller="Profile" asp-action="ViewWishlist">View Wishlist</button>
+
+                    </div>
+                }
+                <form>
+                    <button type="submit" asp-controller="Profile" asp-action="ListPlayer">List player for sale</button>
+                </form>
+                <form>
+                    <button type="submit" asp-controller="Profile" asp-action="ClubListings">View club listings</button>
+                </form>
+        </div>
+    </div>
+}
+    else {
+        <div class="no-login">
+            <h1>You are not logged in. Please log in and try again</h1>
+        </div>
+    }
+    
+</div>
