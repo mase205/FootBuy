@@ -34,6 +34,8 @@ jobs:
       - name: dotnet bundle migration
         run: dotnet ef migrations bundle --runtime linux-x64 -p project.csproj -o ${{env.DOTNET_ROOT}}/myapp/migrate
 
+
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
@@ -59,5 +61,5 @@ jobs:
         with:
           app-name: 'FootBuy'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CF85801964614D55926518EC0A6F67C0 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8F731F6A68A04F76AB3FEB08863F4C93 }}
           package: .
