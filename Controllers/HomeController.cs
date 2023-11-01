@@ -1,6 +1,5 @@
 ﻿using System.Diagnostics;
 using System.Text.Json.Nodes;
-using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Mvc;
 using project.Models;
 
@@ -64,9 +63,9 @@ namespace project.Controllers {
         country??="";
         club??="";
         var SearchList = _context.Players.AsEnumerable().Where(prop => 
-            Regex.Replace(prop.Name, @"[^a-zA-Z]", "").ToLower().Contains(name.ToLower()) && 
-            Regex.Replace(prop.Club, @"[^a-zA-Z]", "").ToLower().Contains(club.ToLower()) &&
-            Regex.Replace(prop.Country, @"[^a-zA-Z]", "").ToLower().Contains(country.ToLower()) && 
+            prop.Name.Normalize().ToLower().Contains(name.ToLower()) && 
+            prop.Club.Normalize().ToLower().Contains(club.ToLower()) &&
+            prop.Country.Normalize().ToLower().Contains(country.ToLower()) && 
             prop.Price > pricemin/1000000 && 
             prop.Price < pricemax/1000000
         );

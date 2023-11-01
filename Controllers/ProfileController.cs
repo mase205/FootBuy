@@ -72,7 +72,7 @@ namespace project.Controllers {
          if (FindUser is not null) {
             ViewBag.User = FindUser;
             var listings = _context.Wishlists.Where(prop => prop.UserID == FindUser.UID);
-            List<Player> players = new();
+            List<Player> players = new() { };
             foreach (var listing in listings) {
                 var player = _context.Players.FirstOrDefault(prop => prop.PlayerID == listing.PlayerID);
                 if (player is not null) {

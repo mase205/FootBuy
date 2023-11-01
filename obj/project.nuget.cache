@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "QS9VYoboJO9UksyWP2XK0/lcnsqjdzWLb/Tj/k0X4k8nJ5qK413HU2jiJDsMthjAqFs4PslRuhZOeTZob5iZlA==",
+  "dgSpecHash": "an93of+5XnacZl1lujfe8rwbJnzBoJtB5ZN8e4CeL46zvkA2VWSxO8uncqf72EuvFdSuop1heWRz/0BsDkAYxQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ori\\Desktop\\WorkProj--1\\project\\project.csproj",
+  "projectFilePath": "C:\\Users\\Ori\\Desktop\\‏‏WorkProj--1 -copy\\project\\project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ori\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Ori\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\Ori\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Ori\\.nuget\\packages\\castle.core\\5.1.0\\castle.core.5.1.0.nupkg.sha512",
+    "C:\\Users\\Ori\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
     "C:\\Users\\Ori\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Ori\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Ori\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

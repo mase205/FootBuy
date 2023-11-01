@@ -16,5 +16,5 @@ public class Player {
     public string? Name {get; set;}
     public int Age {get; set;}
     [Required]
-    public int Price {get; set;}
+    public double Price {get; set;}
 }

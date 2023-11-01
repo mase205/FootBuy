@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\Ori\Desktop\‏‏WorkProj--1 -copy\project\obj\Release\net7.0\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\Ori\Desktop\‏‏WorkProj--1 -copy\project\obj\Release\net7.0\PubTmp\EFSQLScripts\project.Models.AppDbContext.sql" />
+</sitemanifest>

@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ori\\Desktop\\WorkProj--1\\project\\project.csproj": {}
+    "C:\\Users\\Ori\\Desktop\\‏‏WorkProj--1 -copy\\project\\project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ori\\Desktop\\WorkProj--1\\project\\project.csproj": {
+    "C:\\Users\\Ori\\Desktop\\‏‏WorkProj--1 -copy\\project\\project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ori\\Desktop\\WorkProj--1\\project\\project.csproj",
+        "projectUniqueName": "C:\\Users\\Ori\\Desktop\\‏‏WorkProj--1 -copy\\project\\project.csproj",
         "projectName": "project",
-        "projectPath": "C:\\Users\\Ori\\Desktop\\WorkProj--1\\project\\project.csproj",
+        "projectPath": "C:\\Users\\Ori\\Desktop\\‏‏WorkProj--1 -copy\\project\\project.csproj",
         "packagesPath": "C:\\Users\\Ori\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ori\\Desktop\\WorkProj--1\\project\\obj\\",
+        "outputPath": "C:\\Users\\Ori\\Desktop\\‏‏WorkProj--1 -copy\\project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ori\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Ori\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -41,6 +43,10 @@
             "BCrypt.Net-Next": {
               "target": "Package",
               "version": "[4.0.3, )"
+            },
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[30.0.1, )"
             },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
@@ -69,6 +75,8 @@
               "version": "[7.0.13, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.13, )"
             },

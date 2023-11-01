@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAlYLvH2xhU0WUMgVXHLNGCQAAAAACAAAAAAAQZgAAAAEAACAAAABGnYzkPdqrG40GykGjObcwL3bjgYMTC3BJLlr//K8cvwAAAAAOgAAAAAIAACAAAACIL1kmWV0SzqEA5ZNoPRZ7p/sDo4FCmf8OUiXKnSKgDYAAAABcXa88HVjrctmOHdyPJQt29t+6OHIV5bZBwEfDd4JNmpR6HzRG8h1jK679MGIb3bvTyva9+kiMm5T6NmwqR9L1xX0WPRvl2U1ZixcIA5NS2ODKIS3w+8Gc4qRFMAK4V++9zQN5T15x+/D1wqX6tkNvBs2IcmAmmiOkSccQPNBS6EAAAABJyIQ1o9QTDCQXzWi5eVKlA9Tcz7DgtU2YIAJh0WQzoth3kcQJ4pQxESmSey6/87U6/bCfEb6v2tDt+BZKpq31</EncryptedPassword>
+    <History>True|2023-11-01T15:44:35.4828340Z;True|2023-11-01T16:56:07.8445162+02:00;False|2023-11-01T16:53:00.6305427+02:00;True|2023-11-01T16:50:14.7524287+02:00;False|2023-11-01T16:46:37.7770118+02:00;True|2023-11-01T16:40:39.2294153+02:00;True|2023-11-01T16:31:39.8901284+02:00;False|2023-11-01T16:27:15.5633559+02:00;True|2023-11-01T16:22:52.8888509+02:00;False|2023-11-01T16:20:45.4760768+02:00;False|2023-11-01T16:18:06.2142054+02:00;False|2023-11-01T16:12:49.1431824+02:00;False|2023-11-01T16:07:57.3246318+02:00;True|2023-11-01T13:38:20.1252565+02:00;True|2023-11-01T13:32:31.6777676+02:00;False|2023-11-01T13:29:14.7568704+02:00;False|2023-11-01T12:49:49.1233909+02:00;False|2023-11-01T12:37:51.6946279+02:00;False|2023-11-01T12:21:38.1722244+02:00;True|2023-11-01T12:21:05.9399386+02:00;False|2023-11-01T11:37:51.0620000+02:00;True|2023-11-01T11:19:38.7748494+02:00;False|2023-11-01T11:10:52.4534614+02:00;False|2023-11-01T11:09:48.7812438+02:00;True|2023-11-01T10:44:28.7851722+02:00;False|2023-11-01T10:42:57.5799963+02:00;False|2023-11-01T10:39:33.1508111+02:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=footbuyappdatabasedbserver.database.windows.net,1433%3bInitial Catalog=FootBuyAppDataBase%3bUser ID=azureSQL%3bPassword=Asql!!!!</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="project.Models.AppDbContext">
+      <Value>Data Source=footbuydbserver-new.database.windows.net,1433%3bInitial Catalog=project_db_new%3bUser ID=azureSQL%3bPassword=Asql!!!!</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

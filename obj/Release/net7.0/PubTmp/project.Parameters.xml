@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="FootBuy" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Ori\\Desktop\\‏‏WorkProj--1\ -copy\\project\\obj\\Release\\net7\.0\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="project.Models.AppDbContext" description="" value="Data Source=footbuydbserver-new.database.windows.net,1433;Initial Catalog=project_db_new;User ID=azureSQL;Password=Asql!!!!" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\Ori\\Desktop\\‏‏WorkProj--1\ -copy\\project\\obj\\Release\\net7\.0\\PubTmp\\EFSQLScripts\\project\.Models\.AppDbContext\.sql$" />
+  </parameter>
+</parameters>
